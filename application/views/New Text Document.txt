@@ -1,0 +1,5 @@
+<html>
+<body>
+<?php echo $data['wel_msg'];?>
+</body>
+</html>
