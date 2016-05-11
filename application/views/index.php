@@ -1,493 +1,1132 @@
 <!DOCTYPE html>
 <html lang="en">
+	
+<!-- Mirrored from kodeforest.net/html/foodcourt/header-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 May 2016 20:41:38 GMT -->
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Coffee and Pizza</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+	<title>Food Court</title>
 
-<!-- font awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-<!-- bootstrap -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-
-<!-- animate.css -->
-<link rel="stylesheet" href="assets/animate/animate.css" />
-<link rel="stylesheet" href="assets/animate/set.css" />
-
-<!-- gallery -->
-<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
-
-<!-- favicon -->
-<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-
-
-<link rel="stylesheet" href="assets/style.css">
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="assets/css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="assets/css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="assets/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="assets/css/widget.css" rel="stylesheet">
+	<!-- Date Picker CSS -->
+	<link href="assets/css/datepicker.css" rel="stylesheet">
+	<link href="assets/css/jquery.timepicker.css" rel="stylesheet">
+	<!-- SVG StyleSheet CSS -->
+	<link href="assets/svg/style.css" rel="stylesheet">
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="assets/css/jquery.bxslider.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+	<!-- DL Menu CSS -->
+	<link href="assets/js/dl-menu/component.css" rel="stylesheet">
+	<!-- Slectric CSS -->
+	<link href="assets/css/selectric.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="assets/css/color.css" rel="stylesheet">
+	<!-- Responcive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
 
 </head>
 
 <body>
-<div class="topbar animated fadeInLeftBig"></div>
+	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+	    <!-- register Modal -->
+	    <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+	        <div class="modal-dialog">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <div class="modal-content">
+	            	<!--SIGNIN AS USER START-->
+	                <div class="user-box">
+	                	<h2>Sign up as a User</h2>
+	                    <!--FORM FIELD START-->
+	                    <div class="form">
+						<form id="userForm" method="post" action="action.php">
+	                        <div class="input-container">
+	                            <input type="text" placeholder="Name">
+	                            <i class="fa fa-user"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="text" placeholder="E-mail">
+	                            <i class="fa fa-envelope-o"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="password" placeholder="Password">
+	                            <i class="fa fa-unlock"></i>
+	                        </div>
+							 <div class="input-container">
+	                            <input type="text" placeholder="Address">
+	                   
+	                        </div>
+							 <div class="input-container">
+	                            <input type="text" placeholder="Contact">
+	                           
+	                        </div>
+	                        <div class="input-container">
+	                            <label>
+	                                <span class="radio">
+	                                    <input type="checkbox" name="foo" value="1" checked>
+	                                    <span class="radio-value" aria-hidden="true"></span>
+	                                </span>
+	                                <span>Remember me</span>
+	                            </label>
+	                        </div>
+	                        <div class="input-container">
+	                            <input class="btn-style" type="submit" />
+	                        </div>
+							</form>
+	                    </div>
+	                    <!--FORM FIELD END-->
+	                    <!--OPTION START-->
+	                    <div class="option">
+	                        <h5>Or Using</h5>
+	                    </div>
+	                    <!--OPTION END-->
+	                    <!--OPTION START-->
+	                    <div class="social-login">
+	                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+	                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+	                    </div>
+	                    <!--OPTION END-->
+	                </div>
+	                <!--SIGNIN AS USER END-->
+	                <div class="user-box-footer">
+	                    Already have an account? <a href="#">Sign In</a>
+	                </div>
+	                <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <!-- register Modal end-->
+	    
+	    <!-- SIGNIN MODEL START -->
+	    <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+	        <div class="modal-dialog">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <div class="modal-content">
+	                <div class="user-box">
+	                    <h2>Sign In</h2>
+	                    <!--FORM FIELD START-->
+	                    <div class="form">
+	                        <div class="input-container">
+	                            <input type="text" placeholder="E-mail">
+	                            <i class="fa fa-envelope-o"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="password" placeholder="Password">
+	                            <i class="fa fa-unlock"></i>
+	                        </div>
+							
+	                        <div class="input-container">
+	                            <label>
+	                                <span class="radio">
+	                                    <input type="checkbox" name="foo" value="1" checked>
+	                                    <span class="radio-value" aria-hidden="true"></span>
+	                                </span>
+	                                <span>Remember me</span>
+	                            </label>
+	                        </div>
+	                        <div class="input-container">
+	                            <button class="btn-style">Sign In</button>
+	                        </div>
+	                    </div>
+	                    <!--FORM FIELD END-->
+	                    <!--OPTION START-->
+	                    <div class="option">
+	                        <h5>Or Using</h5>
+	                    </div>
+	                    <!--OPTION END-->
+	                    <!--OPTION START-->
+	                    <div class="social-login">
+	                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+	                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+	                    </div>
+	                    <!--OPTION END-->
+	                
+	                </div>
+	                <div class="user-box-footer">
+	                    <p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+	                </div>
+	                <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <!-- SIGNIN MODEL END -->
 
-<!-- Header Starts -->
-<div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><img src="assets/images/logo.png" alt="logo"></a>
-              <!-- #Logo Ends -->
-
-
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
+		<!--HEADER START-->
+    	<header class="header-3">
+    		<!--TOP BAR START-->
+            <div class="kode-top-bar3">
+            	<div class="container">
+                	<ul class="pull-left lung-wrap">
+                        <li>
+                        	<div class="dropdown drop">
+							  	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="assets/extra-images/flag-1.jpg" alt="">English</button>
+							  	<ul class="dropdown-menu">
+								   	<li><img src="assets/extra-images/flag-1.jpg" alt="">English</li>
+		                            <li><img src="assets/extra-images/flag-2.jpg" alt="">Germany</li>
+		                            <li><img src="assets/extra-images/flag-3.jpg" alt="">Finland</li>
+							 	</ul>
+							</div>
+                        </li>
+                        <li>
+                        	<div class="dropdown drop">
+							  	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">USD</button>
+							  	<ul class="dropdown-menu">
+								   	<li>USD</li>
+		                            <li>Euro</li>
+		                            <li>Pound</li>
+							 	</ul>
+							</div>
+                        </li>
+                        <li><i class="fa fa-sign-in"></i><a href="#" data-toggle="modal" data-target="#signin-box">Login</a></li>
+                    </ul>
+                    <div class="pull-right">
+                    	<ul class="admin-wrap">
+	                        <li><i class="fa fa-user"></i><a href="#" data-toggle="modal" data-target="#reg-box">signup</a></li>
+	                        <li><i class="fa fa-check-square-o"></i><a href="#">Checkout</a></li>
+	                    </ul>
+	                    <!--SEARCH LINK START-->
+						<div class="cart">
+						    <i class="fa fa-shopping-cart"><span>1</span></i>
+						    <div class="shoppingform">
+								<ul class="cart_list">
+									<li>
+										<a class="remove" href="#">×</a>	
+										<a class="thumb" href="#"><img src="assets/extra-images/crat-thumb-1.jpg" alt=""/></a>	
+										<span class="quantity">
+											<strong>Meet</strong>
+											× 1 
+											<span class="amount"><span>£</span>19.99</span>
+										</span>
+									</li>
+									<li>
+										<a class="remove" href="#">×</a>	
+										<a class="thumb" href="#"><img src="assets/extra-images/crat-thumb-2.jpg" alt=""/></a>	
+										<span class="quantity">
+											<strong>Beef</strong>
+											× 1 
+											<span class="amount"><span>£</span>19.99</span>
+										</span>
+									</li>
+								</ul>
+							    <div class="popoverButtons">
+									<a class="hudbtn left" href="http://kodeforest.net/cart/">View</a>
+									<a class="simpleCart_checkout hudbtn primary right" href="javascript:;">Checkout</a>
+								</div>
+						    </div>
+						</div>
+						<!--SEARCH LINK END-->
+                    </div>
+                </div>
             </div>
-
-
-            <!-- Nav Starts -->
-            <div class="navbar-collapse  collapse">
-              <ul class="nav navbar-nav navbar-right scroll">
-                 <li class="active"><a href="#home">Home</a></li>
-                 <li ><a href="#menu">Menu</a></li>
-                 <li ><a href="#foods">Foods</a></li>
-                 <li ><a href="#partners">Partners</a></li>
-                 <li ><a href="#contact">Contact</a></li>
-              </ul>
+            <!--TOP BAR END-->
+            <div class="container">
+                <!--Navigation Wrap Start-->
+                <div class="kode_navigation3_wrap">
+                	<!--Navigation Wrap Start-->
+                    <div class="navigation3 pull-left">
+                        <ul>
+                            <li class="active"><a href="index-2.html">Home</a>
+                                	<ul>
+	                                	<li><a href="header-2.html">header 2</a></li>
+	                                	<li><a href="header-3.html">header 3</a></li>
+	                                </ul>
+                                </li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="#">Pages</a>
+                            	<ul>
+                                	<li><a href="404.html">404</a></li>
+                                    <li><a href="our-master-cheff.html">master cheff</a></li>
+                                    <li><a href="comingsoon.html">comingsoon</a></li>
+                                    <li><a href="short-codes.html">short codes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="reservation.html">reservation</a></li>
+                          </ul>
+                    </div>
+                    <!--Navigation Wrap End-->
+                    <!--LOGO START-->
+	            	<div class="kode-logo3">
+	                	<a href="#"><img src="assets/extra-images/logo-main3.png" alt=""/></a>
+	                </div>
+	                <!--LOGO END-->
+                    <!--Navigation Wrap Start-->
+                    <div class="navigation3 pull-right">
+                        <ul>
+                            <li><a href="#">Menu</a>
+                            	<ul>
+                                	<li><a href="menu-parallax.html">menu parallax</a></li>
+                                    <li><a href="our-menu.html">our menu</a></li>
+                                    <li><a href="recipe-single.html">recipe single</a></li>
+                                    <li><a href="reservation.html">reservation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Gallery</a>
+                            	<ul>
+                                	<li><a href="messoner-gallery.html">messoner gallery</a></li>
+                                    <li><a href="messoner-gallery2.html">messoner gallery 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                                <ul>
+                                	<li><a href="blog-1.html">blog Full Width</a></li>
+                                	<li><a href="our-blog-3.html">blog Style 1</a></li>
+                                    <li><a href="blog-2style.html">blog style 2</a></li>
+                                    <li><a href="our-blog-4.html">Blog left sidebar</a></li>
+                                    <li><a href="our-blog-2.html">Blog right sidebar</a></li>
+                                    <li><a href="rightsidebar-style-2.html">Syle 2 with sidebar</a></li>
+                                    <li><a href="blog-details.html">blog details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!--Navigation Wrap End-->
+                    <!--DL Menu Start-->
+                    <div id="kode-responsive-navigation" class="dl-menuwrapper">
+                        <button class="dl-trigger">Open Menu</button>
+                        <ul class="dl-menu">
+                            <li class="active"><a href="index-2.html">Home</a>
+                            	<ul class="dl-submenu">
+                                	<li><a href="header-2.html">header 2</a></li>
+	                                	<li><a href="header-3.html">header 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li class="menu-item kode-parent-menu"><a href="#">Pages</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="our-master-cheff.html">master cheff</a></li>
+                                    <li><a href="comingsoon.html">comingsoon</a></li>
+                                    <li><a href="short-codes.html">short codes</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item kode-parent-menu"><a href="#">menu</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="menu-parallax.html">menu parallax</a></li>
+                                    <li><a href="our-menu.html">our menu</a></li>
+                                    <li><a href="recipe-single.html">recipe single</a></li>
+                                    <li><a href="reservation.html">reservation</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item kode-parent-menu"><a href="#">gallery</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="messoner-gallery.html">messoner gallery</a></li>
+                                    <li><a href="messoner-gallery2.html">messoner gallery 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item kode-parent-menu"><a href="#">blog</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-1.html">blog 1</a></li>
+                                    <li><a href="blog-details.html">blog details</a></li>
+                                    <li><a href="our-blog-2.html">our blog 2</a></li>
+                                    <li><a href="our-blog-3.html">our blog 3</a></li>
+                                    <li><a href="our-blog-4.html">our blog 4</a></li>
+									<li><a href="blog-2style.html">blog 2style</a></li>
+									<li><a href="rightsidebar-style-2.html">sidebar-style-2</a></li>
+									<li><a href="leftsidebar-style-2.html">sidebar-style-2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!--DL Menu END-->
+                </div>
+                <!--Navigation Wrap End-->
             </div>
-            <!-- #Nav Ends -->
+		</header>
+		<!--HEADER END-->
+		<!--HOME PAGE BANNER START-->
+		<div class="kode-home-banner banner-3">
+			<ul class="bxslider">
+                <li>
+                    <img src="assets/extra-images/banner-2.jpg" alt=""/>
+                    <div class="kode_caption">
+                        <h6>Welcome to Our Restaurant</h6>
+                        <h2>Amazing & Delicious Food</h2>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin. <span></span> lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis odio sit amet nibh</span><span>sem nibh id elit. Duis sed vulputate cursus a sit amet mauris.</span></p>
+                        <a class="kode_link_2" href="#">More Info<i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/extra-images/banner-1.jpg" alt=""/>
+                    <div class="kode_caption">
+                        <h6>Welcome to Our Restaurant</h6>
+                        <h2> Delicious Food</h2>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin. <span></span> lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis odio sit amet nibh</span><span>sem nibh id elit. Duis sed vulputate cursus a sit amet mauris.</span></p>
+                        <a class="kode_link_2" href="#">More Info<i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/extra-images/banner-12.jpg" alt=""/>
+                    <div class="kode_caption">
+                        <h6>Welcome to Our Restaurant</h6>
+                        <h2>Amazing</h2>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin. <span></span> lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis odio sit amet nibh</span><span>sem nibh id elit. Duis sed vulputate cursus a sit amet mauris.</span></p>
+                        <a class="kode_link_2" href="#">More Info<i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </li>
+              
+            </ul>
+		</div>
+		<!--HOME PAGE BANNER END-->
 
-          </div>
+
+		<div class="kf_content_wrap">
+			<!--WE ARE SECTION START-->
+			<section class="we-are-bg">
+				<div class="container">
+					<!--WE ARE WRAP START-->
+					<div class="kode-we-are-wrap ">
+						<div class="thumb">
+							<figure>
+								<img src="assets/extra-images/we-are.png" alt=""/>
+							</figure>
+						</div>
+						<div class="text">
+							<div class="kode-food-hdg-5 mgn-adj">
+								<h3>Who <b>We Are ?</b></h3>
+							</div>
+							<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
+
+							<div class="kode-food-hdg-5">
+								<h3>What <b>We Do</b></h3>
+							</div>
+							<!--FOOD META START-->
+							<ul class="kode-food-meta">
+								<li>
+									<i class="icon-food"></i>
+									<div class="kode-link-hd">
+										<h5>Come for Our</h5>
+										<h5><a href="#">Delicious Dishes</a></h5>
+									</div>
+								</li>
+								<li>
+									<i class="icon-drink-1"></i>
+									<div class="kode-link-hd">
+										<h5>Enjoy the wine</h5>
+										<h5><a href="#">of our winery</a></h5>
+									</div>
+								</li>
+								<li>
+									<i class="icon-food-1"></i>
+									<div class="kode-link-hd">
+										<h5>Our Dishes Are</h5>
+										<h5><a href="#">Made With Love</a></h5>
+									</div>
+								</li>
+								<li>
+									<i class="icon-food-1"></i>
+									<div class="kode-link-hd">
+										<h5>Our Dishes Are</h5>
+										<h5><a href="#">Made With Love</a></h5>
+									</div>
+								</li>
+							</ul>
+							<!--FOOD META END-->
+						</div>
+					</div>
+					<!--WE ARE WRAP END-->
+				</div>
+			</section>
+			<!--WE ARE SECTION END-->
+			<!--SPECIAL RECIPIES SECTION START-->
+			<section class="kode-sp-recipies-bg">
+					<!--HEADING 4 START-->
+					<!--HEADING 4 START-->
+					<div class="kode-food-hdg-4">
+						<h3>Our <b>Special Recipies</b></h3>
+					</div>
+					<!--HEADING 4 END-->
+					<div class="kode-sp-recipies">
+						<div class="container">
+							<!--RECIPIES DES START-->
+							<div class="kode-recipies-des">
+								<figure>
+									<a data-rel="prettyPhoto[]"  href="assets/extra-images/recipie-1.jpg"><img src="assets/extra-images/recipie-1.jpg" alt=""/></a>
+								</figure>
+								<div class="text">
+									<i class="icon-food-2"></i>
+									<h4>Hot pizza</h4>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+									<P>This is Photoshop's version  of Lorem Ipsum.  velit auctor aliquet.</P>
+									<span><sup>$</sup> 3.99</span>
+									<a class="kode_link_2"  href="#">Order Now</a>
+								</div>
+							</div>
+							<!--RECIPIES DES END-->
+							<!--RECIPIES DES START-->
+							<div class="kode-recipies-des">
+								<div class="text">
+									<i class="icon-food-2"></i>
+									<h4> TIRADITO</h4>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+									<P>This is Photoshop's version  of Lorem Ipsum.  velit auctor aliquet.</P>
+									<span><sup>$</sup> 3.99</span>
+									<a class="kode_link_2"  href="#">Order Now</a>
+								</div>
+								<figure>
+									<a href="#"><img src="assets/extra-images/recipie-2.jpg" alt=""/></a>
+								</figure>
+							</div>
+							<!--RECIPIES DES END-->
+							<!--RECIPIES DES START-->
+							<div class="kode-recipies-des">
+								<figure>
+									<a data-rel="prettyPhoto[]"  href="assets/extra-images/recipie-3.jpg"><img src="assets/extra-images/recipie-3.jpg" alt=""/></a>
+								</figure>
+								<div class="text">
+									<i class="icon-food-2"></i>
+									<h4><a href="#">BEEF TATAKI</a></h4>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+									<P>This is Photoshop's version  of Lorem Ipsum.  velit auctor aliquet.</P>
+									<span><sup>$</sup> 1.99</span>
+									<a class="kode_link_2"  href="#">Order Now</a>
+								</div>
+							</div>
+							<!--RECIPIES DES END-->
+							<!--RECIPIES DES START-->
+							<div class="kode-recipies-des">
+								<figure>
+									<a data-rel="prettyPhoto[]" href="assets/extra-images/recipie-4.jpg"><img src="assets/extra-images/recipie-4.jpg" alt=""/></a>
+								</figure>
+								<div class="text">
+									<i class="icon-food-2"></i>
+									<h4>Hot DOg</h4>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+									<P>This is Photoshop's version  of Lorem Ipsum.  velit auctor aliquet.</P>
+									<span><sup>$</sup> 3.99</span>
+									<a class="kode_link_2"  href="#">Order Now</a>
+								</div>
+							</div>
+							<!--RECIPIES DES END-->
+							<!--RECIPIES DES START-->
+							<div class="kode-recipies-des">
+								<div class="text">
+									<i class="icon-food-2"></i>
+									<h4> Salmon Steak</h4>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+									<P>This is Photoshop's version  of Lorem Ipsum.  velit auctor aliquet.</P>
+									<span><sup>$</sup> 3.99</span>
+									<a class="kode_link_2"  href="#">Order Now</a>
+								</div>
+								<figure>
+									<a data-rel="prettyPhoto[]" href="assets/extra-images/recipie-5.jpg"><img src="assets/extra-images/recipie-5.jpg" alt=""/></a>
+								</figure>
+							</div>
+							<!--RECIPIES DES END-->
+							<!--RECIPIES DES START-->
+							<div class="kode-recipies-des">
+								<figure>
+									<a data-rel="prettyPhoto[]" href="assets/extra-images/recipie-6.jpg"><img src="assets/extra-images/recipie-6.jpg" alt=""/></a>
+								</figure>
+								<div class="text">
+									<i class="icon-food-2"></i>
+									<h4>Mushroom</h4>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+									<P>This is Photoshop's version  of Lorem Ipsum.  velit auctor aliquet.</P>
+									<span><sup>$</sup> 2.99</span>
+									<a class="kode_link_2"  href="#">Order Now</a>
+								</div>
+							</div>
+							<!--RECIPIES DES END-->
+						</div>
+					</div>
+			</section>
+			<!--SPECIAL RECIPIES SECTION END-->
+			<!--MASTER CHEF SECTION START-->
+			<section>
+				<div class="container">
+					<!--HEADING 4 START-->
+					<!--HEADING 4 START-->
+					<div class="kode-food-hdg-4">
+						<h3>Our <b>Master Chefs</b></h3>
+					</div>
+					<!--HEADING 4 END-->
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!--MASTER CHEF DES START-->
+							<div class="kode-master-chef">
+								<figure>
+									<img src="assets/extra-images/master-chef-1.jpg" alt=""/>
+									<figcaption>
+										<ul class="social-style-2">
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</figcaption>
+								</figure>
+								<div class="master-chef-hd">
+									<h3><a href="#">Jonatahan Doe</a></h3>
+									<h4>Chef</h4>
+								</div>
+							</div>
+							<!--MASTER CHEF DES END-->
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!--MASTER CHEF DES START-->
+							<div class="kode-master-chef">
+								<figure>
+									<img src="assets/extra-images/master-chef-2.jpg" alt=""/>
+									<figcaption>
+										<ul class="social-style-2">
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</figcaption>
+								</figure>
+								<div class="master-chef-hd">
+									<h3><a href="#">Georgia Barnes</a></h3>
+									<h4>Chef</h4>
+								</div>
+							</div>
+							<!--MASTER CHEF DES END-->
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!--MASTER CHEF DES START-->
+							<div class="kode-master-chef">
+								<figure>
+									<img src="assets/extra-images/master-chef-3.jpg" alt=""/>
+									<figcaption>
+										<ul class="social-style-2">
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</figcaption>
+								</figure>
+								<div class="master-chef-hd">
+									<h3><a href="#">Shannon Bennett </a></h3>
+									<h4>Chef</h4>
+								</div>
+							</div>
+							<!--MASTER CHEF DES END-->
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!--MASTER CHEF DES START-->
+							<div class="kode-master-chef">
+								<figure>
+									<img src="assets/extra-images/master-chef-4.jpg" alt=""/>
+									<figcaption>
+										<ul class="social-style-2">
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</figcaption>
+								</figure>
+								<div class="master-chef-hd">
+									<h3><a href="#"> Billie McKay</a></h3>
+									<h4>Chef</h4>
+								</div>
+							</div>
+							<!--MASTER CHEF DES END-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--MASTER CHEF SECTION END-->
+			<!--COUNTER UP SECTION START-->
+			<section class="counterup-bg">
+				<ul class="kode-counter-up">
+					<li>
+						<span class="counter">69</span>
+						<p>Opening hours per week</p>
+					</li>
+					<li>
+						<span class="counter">42</span>
+						<p>Most Delicious Dishes</p>
+					</li>
+					<li>
+						<span class="counter">07</span><i>+</i>
+						<p>Years Of Experience</p>
+					</li>
+					<li>
+						<span class="counter">100</span><i>%</i>
+						<p>Customer Satisfaction</p>
+					</li>
+					<li>
+						<span class="counter">09</span>
+						<small></small>
+						<p>Deserved Awards</p>
+					</li>
+				</ul>
+			</section>
+			<!--COUNTER UP SECTION END-->
+			<!--OUR BLOG SECTION START-->
+			<section>
+				<div class="container">
+					<!--HEADING 4 START-->
+					<div class="kode-food-hdg-4">
+						<h3>From  <b>Our Blog</b></h3>
+					</div>
+					<!--HEADING 4 END-->		
+					<div class="row">
+						<div class="col-md-6">
+							<!--BLOG DES START-->
+							<div class="kode-blog-des">
+								<figure>
+									<img src="assets/extra-images/home-blog-1.jpg" alt=""/>
+									<figcaption><span class="date"><b>09</b>jan</span></figcaption>
+								</figure>
+								<div class="text">
+									<h4><a href="#">BEEF TATAKI</a></h4>
+									<p>Mauris in erat justo. Nullam ac urna eu felis  condimentum sit amet a augue. Sed non neque elit.</p>
+									<ul class="blog-link">
+										<li>by:<a href="#">Alberta Doe</a></li>
+										<li><a href="#">Read More</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--BLOG DES END-->
+						</div>
+						<div class="col-md-6">
+							<!--BLOG DES START-->
+							<div class="kode-blog-des">
+								<figure>
+									<img src="assets/extra-images/home-blog-2.jpg" alt=""/>
+									<figcaption><span class="date"><b>19</b>may</span></figcaption>
+								</figure>
+								<div class="text">
+									<h4><a href="#">CAESAR SALAD</a></h4>
+									<p>Mauris in erat justo. Nullam ac urna eu felis  condimentum sit amet a augue. Sed non neque elit.</p>
+									<ul class="blog-link">
+										<li>by:<a href="#">Alberta Doe</a></li>
+										<li><a href="#">Read More</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--BLOG DES END-->
+						</div>
+						<div class="col-md-6">
+							<!--BLOG DES START-->
+							<div class="kode-blog-des">
+								<figure>
+									<img src="assets/extra-images/home-blog-3.jpg" alt=""/>
+									<figcaption><span class="date"><b>29</b>aug</span></figcaption>
+								</figure>
+								<div class="text">
+									<h4><a href="#">LOBSTER ROLL</a></h4>
+									<p>Mauris in erat justo. Nullam ac urna eu felis  condimentum sit amet a augue. Sed non neque elit.</p>
+									<ul class="blog-link">
+										<li>by:<a href="#">Alberta Doe</a></li>
+										<li><a href="#">Read More</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--BLOG DES END-->
+						</div>
+						<div class="col-md-6">
+							<!--BLOG DES START-->
+							<div class="kode-blog-des">
+								<figure>
+									<img src="assets/extra-images/home-blog-4.jpg" alt=""/>
+									<figcaption><span class="date"><b>21</b>jan</span></figcaption>
+								</figure>
+								<div class="text">
+									<h4><a href="#">CORN SOUP</a></h4>
+									<p>Mauris in erat justo. Nullam ac urna eu felis  condimentum sit amet a augue. Sed non neque elit.</p>
+									<ul class="blog-link">
+										<li>by:<a href="#">Alberta Doe</a></li>
+										<li><a href="#">Read More</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--BLOG DES END-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--OUR BLOG SECTION END-->
+			<!--RESERVATION SECTION START-->
+			<section class="kode-reservation-bg">
+				<div class="container">
+					<!--HEADING 4 START-->
+					<div class="kode-food-hdg-4">
+						<h3>Make <b>A Reservation</b></h3>
+					</div>
+					<!--HEADING 4 END-->	
+					<div class="row">
+						<form>
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<input type="text" placeholder="Your Name *"/>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<input type="text" placeholder="Your Email *"/>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<input type="text" placeholder="Phone No.*"/>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<input type="text" placeholder="Number of Persons *"/>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<select class="basic">
+	                                    <option value="0">Prefered Food *</option>
+	                                    <option value="9">White Lasagna</option>
+	                                    <option value="2">Turkey Sausage </option>
+	                                    <option value="3">Spicy Shrooms</option>
+	                                </select>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<select class="basic">
+	                                     <option value="0">Branch Name *</option>
+	                                    <option value="9">New York City</option>
+	                                    <option value="2">Los Angeles</option>
+	                                    <option value="3">Washington, D.C.</option>
+	                                    <option value="6">San Francisco</option>
+	                                </select>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<div class="date-picker-des" data-provide="datepicker">
+									    <input type="text" id="my-datepicker" class="basic" placeholder="Arrival Date">  
+										<span class="add-on"><i class="fa fa-calendar" id="cal2"></i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="reservation-input">
+									<input class="timepicker" type="text" name="time" placeholder="Time *">
+									<i class="fa fa-angle-down"></i>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="reservation-input">
+									<textarea placeholder="Message *"></textarea>
+									<button class="kode_link_2">Book Your Table</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!--RESERVATION SECTION END-->
+			<!--TESTIMONIAL SECTION START-->
+			<section>
+				<div class="container">
+					<!--HEADING 4 START-->
+					<div class="kode-food-hdg-4">
+						<h3>From  <b>Testimonilas</b></h3>
+					</div>
+					<!--HEADING 4 END-->	
+					<div class="row">
+						<!--TESTIMONIAL SLIDER START-->
+						<div class="kode-testimonial-slider">	
+							<div id="owlslider-testimonia" class="owl-carousel owl-theme">
+								<div class="item">
+									<!--TESTIMONIAL SLIDER START-->
+									<div class="kode-testimonial-wrap">
+										<div class="kode-testimonial-hd">
+											<h4>Jonathan Doe</h4>
+											<span>Happy Customer</span>
+										</div>
+										<div class="kode-testimonial-des">
+											<figure><img src="assets/extra-images/testimonial-1.jpg" alt=""/></figure>
+											<div class="blockquote-2">
+												<p><i class="fa fa-quote-left"></i>
+													Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti ad litora torquent per conubia nostra per inceptos himenaeos. 
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--TESTIMONIAL SLIDER END-->
+								</div>
+
+								<div class="item">
+									<!--TESTIMONIAL SLIDER START-->
+									<div class="kode-testimonial-wrap">
+										<div class="kode-testimonial-hd">
+											<h4>Alberta Doe</h4>
+											<span>Happy Customer</span>
+										</div>
+										<div class="kode-testimonial-des">
+											<figure><img src="assets/extra-images/testimonial-2.jpg" alt=""/></figure>
+											<div class="blockquote-2">
+												<p><i class="fa fa-quote-left"></i>
+													Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti ad litora torquent per conubia nostra per inceptos himenaeos. 
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--TESTIMONIAL SLIDER END-->
+								</div>
+
+								<div class="item">
+									<!--TESTIMONIAL SLIDER START-->
+									<div class="kode-testimonial-wrap">
+										<div class="kode-testimonial-hd">
+											<h4>Jonathan Doe</h4>
+											<span>Happy Customer</span>
+										</div>
+										<div class="kode-testimonial-des">
+											<figure><img src="assets/extra-images/testimonial-1.jpg" alt=""/></figure>
+											<div class="blockquote-2">
+												<p><i class="fa fa-quote-left"></i>
+													Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti ad litora torquent per conubia nostra per inceptos himenaeos. 
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--TESTIMONIAL SLIDER END-->
+								</div>
+
+								<div class="item">
+									<!--TESTIMONIAL SLIDER START-->
+									<div class="kode-testimonial-wrap">
+										<div class="kode-testimonial-hd">
+											<h4>Alberta Doe</h4>
+											<span>Happy Customer</span>
+										</div>
+										<div class="kode-testimonial-des">
+											<figure><img src="assets/extra-images/testimonial-2.jpg" alt=""/></figure>
+											<div class="blockquote-2">
+												<p><i class="fa fa-quote-left"></i>
+													Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti ad litora torquent per conubia nostra per inceptos himenaeos. 
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--TESTIMONIAL SLIDER END-->
+								</div>
+
+								<div class="item">
+									<!--TESTIMONIAL SLIDER START-->
+									<div class="kode-testimonial-wrap">
+										<div class="kode-testimonial-hd">
+											<h4>Jonathan Doe</h4>
+											<span>Happy Customer</span>
+										</div>
+										<div class="kode-testimonial-des">
+											<figure><img src="assets/extra-images/testimonial-2.jpg" alt=""/></figure>
+											<div class="blockquote-2">
+												<p><i class="fa fa-quote-left"></i>
+													Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti ad litora torquent per conubia nostra per inceptos himenaeos. 
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--TESTIMONIAL SLIDER END-->
+								</div>
+							 
+							</div>
+						</div>
+						<!--TESTIMONIAL SLIDER END-->
+					</div>
+				</div>
+			</section>
+			<!--TESTIMONIAL SECTION END-->
+		</div>
+		<!--FOOTER START-->
+		<footer class="footer-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<!--WIDGeT WIDGET_TEXT START-->
+						<div class="widget widget-text">
+							<div class="kode-food-hdg-7">
+								<h3>About Us</h3>
+							</div>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus sit amet a augue. Sed non neque elit.</p>
+							<a class="blockquote-3" href="#">In the, kitchen wo do magic</a>
+							<span>We are making the best food in town</span>
+						</div>
+						<!--WIDGeT WIDGET_TEXT END-->
+					</div>
+					<div class="col-md-4">
+						<!--WIDGeT WIDGET_DEAL META START-->
+						<div class="widget widget-deal-meta">
+							<div class="kode-food-hdg-7">
+								<h3>Daily Deals</h3>
+							</div>
+							<ul class="deal-meta">
+								<li>
+									<div class="deal-thumb">
+										<figure><a data-rel="prettyPhoto[]" href="assets/extra-images/foote-deal-thumb1.jpg"><img src="assets/extra-images/foote-deal-thumb1.jpg" alt=""/></a></figure>
+										<div class="text">
+											<h6><a href="#">Pizza Garlic</a></h6>
+											<ul class="deal-meta-links">
+												<li><a href="#">bocon</a></li>
+												<li><a href="#">olives</a></li>
+												<li><a href="#">cheese</a></li>
+												<li><a href="#">garlic</a></li>
+												<li><a href="#">green chilli</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="deal-thumb">
+										<figure><a data-rel="prettyPhoto[]" href="assets/extra-images/foote-deal-thumb2.jpg"><img src="assets/extra-images/foote-deal-thumb2.jpg" alt=""/></a></figure>
+										<div class="text">
+											<h6><a href="#">Deep Dish Pizza</a></h6>
+											<ul class="deal-meta-links">
+												<li><a href="#">Cheese</a></li>
+												<li><a href="#">olives</a></li>
+												<li><a href="#">meat</a></li>
+												<li><a href="#">vegetables</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="deal-thumb">
+										<figure><a data-rel="prettyPhoto[]" href="assets/extra-images/foote-deal-thumb3.jpg"><img src="assets/extra-images/foote-deal-thumb3.jpg" alt=""/></a></figure>
+										<div class="text">
+											<h6><a href="#">Neapolitan Pizza</a></h6>
+											<ul class="deal-meta-links">
+												<li><a href="#">tomatoes</a></li>
+												<li><a href="#">olives</a></li>
+												<li><a href="#">onions</a></li>
+												<li><a href="#">garlic</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--WIDGeT WIDGET_DEAL META END-->
+					</div>
+					<div class="col-md-4">
+						<!--WIDGeT WIDGET_CONTACT US START-->
+						<div class="widget widget-contact-us">
+							<div class="kode-food-hdg-7">
+								<h3>Contact Us</h3>
+							</div>
+							<ul class="contact-links">
+								<li>
+									<span><i class="fa fa-map-marker"></i>Address:</span>
+									<address>Neque porro quisquam Street # 2, New town , Claifornia, USA </address>
+								</li>
+								<li>
+									<span><i class="fa fa-phone"></i>Phone:</span>
+									<em>+ (5968) 1323 564 789 / 1323 564 788 </em>
+								</li>
+								<li><span><i class="fa fa-envelope"></i>Email:</span><a href="#">Info@kodeforest.com </a></li>
+								<li><span><i class="fa fa-clock-o"></i>Timing:</span><p>Everyday, 08:00 - 00:00</p>
+							</ul>
+						</div>
+						<!--WIDGeT WIDGET_CONTACT US END-->
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--FOOTER END-->
+		<div class="kode-copyright">
+			<div class="container">
+				<div class="pull-left">
+					<p>Copyrights © 2015 - <a href="#"><b>KODEFOREST</b></a> </p>
+				</div>
+				<div class="kofe-footer-logo">
+					<a href="index-2.html"><img src="assets/extra-images/footer-logo.png" alt=""/></a>
+				</div>
+				<div class="pull-right">
+					<p>All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+		<!-- START GO UP -->
+        <div class="go-up">
+            <a href="#" ><i class="fa fa-chevron-up"></i></a>    
         </div>
-
-      </div>
+        <!--END GO UP-->
+		
     </div>
-<!-- #Header Starts -->
-
-
-
-
-<div id="home">
-<!-- Slider Starts -->
-<div class="banner">
-          <img src="assets/images/back.jpg" alt="banner" class="img-responsive">
-          <div class="caption">
-            <div class="caption-wrapper">
-              <div class="caption-info">              
-              <i class="fa fa-coffee fa-5x animated bounceInDown"></i>
-              <h1 class="animated bounceInUp">Best place for delicious pizza and coffee</h1>
-              <p class="animated bounceInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-             <a href="#menu" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a>
-              </div>
-            </div>
-          </div>
-</div>
-<!-- #Slider Ends -->
-</div>
-
-
-
-
-
-
-
-
-
-<!-- Cirlce Starts -->
-<div id="menu"  class="container spacer about">
-<h2 class="text-center wowload fadeInUp">Creative photographers of London</h2>  
-  <div class="row">
-  <div class="col-sm-6 wowload fadeInLeft">
-    <h4><i class="fa fa-camera-retro"></i> Introduction </h4>
-    <p>Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.</p>
-
-
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
-    
-
-  </div>
-  <div class="col-sm-6 wowload fadeInRight">
-    
-     <h4><i class="fa fa-bars"></i> Menu</h4>
-
-      <!-- menus -->
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         <i class="fa fa-coffee"></i> Tea & Coffee
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
-      <div class="panel-body">
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         <i class="fa fa-fire"></i> Firewood Pizza and Spaghetti
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
-      <div class="panel-body">
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-         <i class="fa fa-beer"></i> Beers & Cocktails
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
-      <div class="panel-body">
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-         <i class="fa fa-spoon"></i> Fine Dinner
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
-      <div class="panel-body">
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-         <i class="fa fa-birthday-cake"></i> Bakery
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel">
-      <div class="panel-body">
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-        <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
-      </div>
-    </div>
-  </div>
-
-
-</div>
-      <!-- menus -->
-
-
-
-  </div>
-  </div>
-
-  
-</div>
-<!-- #Cirlce Ends -->
-
-
-<!-- works -->
-<div id="foods"  class=" clearfix grid"> 
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="assets/images/portfolio/1.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Cappuchino</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="assets/images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="assets/images/portfolio/2.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Latte</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="assets/images/portfolio/2.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="assets/images/portfolio/3.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Ambience</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="assets/images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="assets/images/portfolio/4.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Fruits</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="assets/images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="assets/images/portfolio/5.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Breakfast</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="assets/images/portfolio/5.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="assets/images/portfolio/6.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Kitchen</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="assets/images/portfolio/6.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     
-    
-    
-
-     
-</div>
-<!-- works -->
-
-
-<div id="partners" class="container spacer ">
-	<h2 class="text-center  wowload fadeInUp">Some of our happy customers</h2>
-  <div class="clearfix">    
-    <div class="col-sm-6 col-sm-offset-3">
-
-
-    <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
-    <div class="carousel-inner">  
-      <div class="item active animated bounceInRight row">
-      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="assets/images/team/1.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>      
-      <span>Angel Smith - <b>eshop Canada</b></span>
-      </div>
-      </div>
-      <div class="item  animated bounceInRight row">
-      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="assets/images/team/2.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-      <span>John Partic - <b>Crazy Pixel</b></span>
-      </div>
-      </div>
-      <div class="item  animated bounceInRight row">
-      <div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="assets/images/team/3.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</p>
-      <span>Harris David - <b>Jet London</b></span>
-      </div>
-      </div>
-  </div>
-
-   <!-- Indicators -->
-   	<ol class="carousel-indicators">
-    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-  	</ol>
-  	<!-- Indicators -->
-  </div>
-
-
-
-    </div>
-  </div>
-
-
-<!-- team -->
-<h3 class="text-center  wowload fadeInUp">Our Chefs</h3>
-<p class="text-center  wowload fadeInLeft">Our chefs that is making everything possible</p>
-<div class="row grid team  wowload fadeInUpBig">	
-	<div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="assets/images/team/8.jpg" alt="img01" class="img-responsive" />
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Chef</p>            
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="assets/images/team/10.jpg" alt="img01"/>
-        <figcaption>            
-            <p><b>Barbara Husto</b><br>Chef</p>            
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="assets/images/team/12.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Asst Chef</p>          
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="assets/images/team/17.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Asst Chef</p>
-        </figcaption>
-    </figure>
-    </div>
-
+    <!--KF KODE WRAPPER WRAP END-->
+	<!--Bootstrap core JavaScript-->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+	<script src="assets/js/jquery.timepicker.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="assets/js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!--Map-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="assets/js/moment.min.js"></script>
+	<script src="assets/js/fullcalendar.min.js"></script>
+	<script src="assets/js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="assets/js/jquery-filterable.html"></script>
+	<!--Accordian JavaScript-->
+	<script src="assets/js/jquery.accordion.html"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="assets/js/waypoints-min.js"></script>
+	<!-- include Masonry -->
+	<script src="assets/js/isotope.pkgd.min.js"></script> 
+	<script src="assets/js/jquery.selectric.min.js"></script>
+	<!--Dl Menu Script-->
+	<script src="assets/js/dl-menu/modernizr.custom.js"></script>
+	<!--Dl Menu Script-->
+	<script src="assets/js/dl-menu/jquery.dlmenu.js"></script>
+	<!--Custom JavaScript-->
+	<script src="assets/js/custom.js"></script>
  
-</div>
-<!-- team -->
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- About Starts -->
-<div class="highlight-info">
-<div class="overlay spacer">
-<div class="container">
-<div class="row text-center  wowload fadeInDownBig">
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-smile-o  fa-5x"></i><h4>24152 Clients</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-thumbs-up  fa-5x"></i><h4>25 Variety</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-history  fa-5x"></i><h4>15 yrs old</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-map-marker fa-5x"></i><h4>2 Locations</h4>
-	</div>
-</div>
-</div>
-</div>
-</div>
-<!-- About Ends -->
-
-
-
-
-
-
-
-
-<div id="contact" class="spacer">
-<!--Contact Starts-->
-<div class="container contactform center">
-<h2 class="text-center  wowload fadeInUp">Reservation</h2>
-  <div class="row wowload fadeInLeftBig">      
-      <div class="col-sm-6 col-sm-offset-3 col-xs-12">      
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Company">
-        <textarea rows="5" placeholder="Message"></textarea>
-        <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
-      </div>
-  </div>
-
-
-
-</div>
-
-</div>
-<div id="map"></div>
-<!--Contact Ends-->
-
-
-
-<!-- Footer Starts -->
-<div class="footer text-center spacer">
-<p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-flickr fa-2x"></i></a> </p>
-Copyright 2014 Cyrus Creative Studio. All rights reserved.
-</div>
-<!-- # Footer Ends -->
-<a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
-
-
-
-
-
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title">Title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
-</div>
-
-
-
-<!-- jquery -->
-<script src="assets/jquery.js"></script>
-
-<!-- wow script -->
-<script src="assets/wow/wow.min.js"></script>
-
-
-<!-- boostrap -->
-<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
-
-<!-- jquery mobile -->
-<script src="assets/mobile/touchSwipe.min.js"></script>
-<script src="assets/respond/respond.js"></script>
-
-<!-- gallery -->
-<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
-
-
-<!-- custom script -->
-<script src="assets/script.js"></script>
-
 </body>
+
+<!-- Mirrored from kodeforest.net/html/foodcourt/header-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 May 2016 20:41:43 GMT -->
 </html>
